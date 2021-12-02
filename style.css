@@ -17,11 +17,7 @@
 
 .video-background{
 
-
     width:100%;
-
- 
-
 
 }
 
@@ -78,8 +74,7 @@ nav ul li a:hover {
 
 
 .video{
-          margin-top: 40px;
-        margin-right: 160px;
+       
 
 }
 
@@ -91,7 +86,7 @@ nav ul li a:hover {
 
 
 .text-box h1 {
-    font-size: 45px;
+    font-size: 25px;
     font-family: arial, helvetica, sans-serif;
     margin-left: 40px;
     margin-bottom: 20px;
@@ -104,9 +99,10 @@ nav ul li a:hover {
         position: relative;
         text-decoration: none;
         color: #ffffff;
-        font-size: 25px;
+        font-size: 20px;
         font-family: arial, helvetica, sans-serif;
         margin: 10px 40px;
+        font-size-adjust:inherit;
       
     }
 
@@ -116,7 +112,7 @@ nav ul li a:hover {
         color: #ffffff;
         font-size: 20px;
         font-family: arial, helvetica, sans-serif;
-        margin: 0px 40px;
+        margin: 10px 40px;
         display: inline-block;
         padding: 10px 30px;
         border: 2px solid #ffffff;
@@ -154,6 +150,7 @@ nav ul li a:hover {
         width: 750px;
         float: right;
         top: 0;
+        margin-right:160px;
     }
 
 
@@ -208,8 +205,8 @@ nav ul li a:hover {
 
 
     .video {
-        margin-top: 40px;
-        margin-right: 160px;
+    width: 100%;
+    margin-right:160px;
     }
 
 
