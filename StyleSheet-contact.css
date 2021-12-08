@@ -5,19 +5,63 @@
     font-family: sans-serif,Arial;
 }
 
+
 .background {
     height: 100vh;
     width: 100%;
     background: #000000;
+    overflow: auto;
 }
 
+/* Style the navigation menu */
+    .topnav {
+        overflow: hidden;
+        background-color: #000;
+        position: relative;
+        display: block;
+    }
 
+    /* Hide the links inside the navigation menu (except for logo/home) */
+    .topnav #myLinks {
+        text-align: center;
+        display: none;
+    }
 
+    /* Style navigation menu links */
+    .topnav a {
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+        background: black;
+    }
+
+  /* Style the hamburger menu */
+    .topnav a.icon {
+      background: black;
+      display: block;
+      position: absolute;
+      right: 0;
+      top: 0;
+      cursor: pointer;
+    }
+
+        /* Add a grey background color on mouse-over */
+    .topnav a:hover {
+            background-color: #fff;
+            color: black;
+    }
+
+/* Style the active link (or home/logo) */
+.active {
+    background-color: #000;
+    color: white;
+}
 nav {
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: space-between;
-    margin: 0 30px;
 }
 
 .logo {
@@ -27,11 +71,15 @@ nav {
     text-align: left;
     float: left;
     margin-top: 20px;
+    margin-left: 20px;
 }
 
+.logo2 {
+    margin-top: 45px;
+}
 
 .nav ul {
-    height: 20px;
+    height: 18px;
     width: 100%;
     font-family: Arial;
     position: center;
@@ -47,11 +95,13 @@ ul li {
     font-size: 20px;
     box-sizing: border-box;
     letter-spacing: 1px;
+    z-index: 20;
 }
 
     ul li a {
         color: #fff;
         text-decoration: none;
+        z-index: 20;
     }
 
 nav ul li a:hover {
@@ -62,24 +112,20 @@ nav ul li a:hover {
 
 /* caja general*/
 body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    padding: 0px;
-    background: #000000;
+
 }
 
 /* texto dentro de la caja general*/
 .container {
     background: #000000;
-    width: 800px;
-    max-width: 800px;
+    width: 100%;
+    max-width: 100%px;
     padding: 25px 40px 10px 40px;
     box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
-    margin: 80px auto;
+    margin: 30px auto;
     border: #ffffff solid 2px;
     border-radius:24px;
+    
 }
 
     /* Titulo: Contact us Form*/
@@ -183,3 +229,196 @@ border-radius:12px;
     color:black;
     font-weight:bold;
 }
+
+
+@media screen and (min-width: 1000px) {
+
+    /* Style the navigation menu */
+    .topnav {
+        overflow: hidden;
+        background-color: #000;
+        position: relative;
+        display: none;
+    }
+
+
+
+
+    /*------------------------------------------------------------------*/
+
+    /* caja general*/
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        padding: 0px;
+        background: #000000;
+    }
+
+    /* texto dentro de la caja general*/
+    .container {
+        background: #000000;
+        width: 800px;
+        max-width: 800px;
+        padding: 25px 40px 10px 40px;
+        box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+        margin: 80px auto;
+        border: #ffffff solid 2px;
+        border-radius: 24px;
+    }
+
+        /* Titulo: Contact us Form*/
+        .container .text {
+            font-size: 35px;
+            font-weight: 600;
+            text-align: center;
+            color: #ffffff;
+        }
+
+
+
+    /* tamano input the write your message*/
+    form .form-row .input-data {
+        width: 100%;
+        height: 45px;
+        margin: 35px 0px;
+        position: relative;
+    }
+    /* agrande la parte debajo del submit*/
+    form .form-row.textarea {
+        height: 200px;
+    }
+
+    /* Estos son los inputs de todos los titulos*/
+    .input-data input,
+    .textarea textarea {
+        display: block;
+        height: 100%;
+        width: 100%;
+        border: none;
+        font-size: 20px;
+        border-bottom: #ffffff 2px solid;
+        background-color: #000000;
+        color: #ffffff;
+    }
+
+    /* Este es el submit*/
+    .input-data2 {
+        display: block;
+        height: 100%;
+        width: 100%;
+        font-size: 15px;
+        background-color: #000000;
+        border: none;
+        text-align: center;
+        line-height: 45px;
+    }
+
+
+    /* padding de los textos de write your message*/
+    .textarea textarea {
+        resize: none;
+        padding-top: 10px;
+        color: #ffffff;
+    }
+
+        /* movimiento de titulos hacia arriba*/
+        .input-data input:focus ~ label,
+        .textarea textarea:focus ~ label {
+            transform: translateY(-20px);
+            color: #ffffff;
+            font-size: 14px;
+        }
+
+
+
+    /* Estos son los titulos*/
+    .input-data label {
+        position: absolute;
+        bottom: 35px;
+        font-size: 18px;
+        pointer-events: none;
+        transition: all 0.3s ease;
+        color: #ffffff;
+    }
+
+    .input-data2 input {
+        font-size: 20px;
+        background: transparent;
+        border: #ffffff solid 2px;
+        height: 50px;
+        width: 300px;
+        color: white;
+        border-radius: 12px;
+    }
+
+        .input-data2 input:hover {
+            background: #ffffff;
+            color: black;
+            font-weight: bold;
+        }
+
+
+    .active {
+        background-color: #000;
+        color: white;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .logo {
+        height: 120px;
+        float: left;
+        cursor: pointer;
+        text-align: left;
+        float: left;
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+
+
+    .nav ul {
+        height: 20px;
+        width: 100%;
+        font-family: Arial;
+        position: center;
+        float: right;
+    }
+
+    ul li {
+        display: inline-block;
+        margin: 10px 25px;
+        padding: 20px 20px;
+        float: right;
+        list-style: none;
+        font-size: 20px;
+        box-sizing: border-box;
+        letter-spacing: 1px;
+        z-index: 20;
+    }
+
+        ul li a {
+            color: #fff;
+            text-decoration: none;
+            z-index: 20;
+        }
+
+    nav ul li a:hover {
+        color: #0cfff0;
+    }
+
+
+
+
+
+
+
+
+
+}
+

@@ -13,9 +13,54 @@
     overflow: auto;
 }
 
+/* Style the navigation menu */
+.topnav {
+    overflow: hidden;
+    background-color: #000;
+    position: relative;
+    display: block;
+}
+
+    /* Hide the links inside the navigation menu (except for logo/home) */
+    .topnav #myLinks {
+        text-align: center;
+        display: none;
+    }
+
+    /* Style navigation menu links */
+    .topnav a {
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+        background: black;
+    }
+
+        /* Style the hamburger menu */
+        .topnav a.icon {
+            background: black;
+            display: block;
+            position: absolute;
+            right: 0;
+            top: 0;
+            cursor: pointer;
+        }
+
+        /* Add a grey background color on mouse-over */
+    .topnav a:hover {
+            background-color: #fff;
+            color: black;
+    }
+
+/* Style the active link (or home/logo) */
+.active {
+    background-color: #000;
+    color: white;
+}
 
 nav {
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: space-between;
 }
@@ -28,6 +73,10 @@ nav {
     float: left;
     margin-top: 20px;
     margin-left: 20px;
+}
+
+.logo2 {
+    margin-top: 45px;
 }
 
 
@@ -63,17 +112,19 @@ nav ul li a:hover {
 
 
 h1 {
-    font-size: 35px;
+    font-size: 18px;
     font-family: Arial, Helvetica, sans-serif;
     margin:auto 20px;
-    margin-top:120px;
+    margin-top:80px;
     color: #ffffff;
+    letter-spacing:1px;
+    
 
 }
 
     h1 a {
         color: #ffffff;
-
+        cursor: pointer;
     }
 
     h1 a:hover{
@@ -81,3 +132,103 @@ h1 {
         background:#fff;
 
     }
+
+
+
+@media screen and (min-width: 1000px) {
+
+    /* Style the navigation menu */
+    .topnav {
+        overflow: hidden;
+        background-color: #000;
+        position: relative;
+        display: none;
+    }
+
+
+
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .logo {
+        height: 120px;
+        float: left;
+        cursor: pointer;
+        text-align: left;
+        float: left;
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+
+
+    .nav ul {
+        height: 20px;
+        width: 100%;
+        font-family: Arial;
+        position: center;
+        float: right;
+    }
+
+    ul li {
+        display: inline-block;
+        margin: 10px 25px;
+        padding: 20px 20px;
+        float: right;
+        list-style: none;
+        font-size: 20px;
+        box-sizing: border-box;
+        letter-spacing: 1px;
+        z-index: 20;
+    }
+
+        ul li a {
+            color: #fff;
+            text-decoration: none;
+            z-index: 20;
+        }
+
+    nav ul li a:hover {
+        color: #0cfff0;
+    }
+
+
+    h1 {
+        font-size: 35px;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: auto 20px;
+        margin-top: 120px;
+        color: #ffffff;
+    }
+
+        h1 a {
+            color: #ffffff;
+            cursor: pointer;
+        }
+
+        h1 a:hover {
+                color: #000000;
+                background: #fff;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

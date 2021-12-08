@@ -9,6 +9,42 @@
     <title>About</title>
 </head>
 <body>
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Top Navigation Menu -->
+    <div class="topnav">
+        <img src="" class="logo2">
+
+        <!-- Navigation links (hidden by default) -->
+        <div id="myLinks">
+            
+                <a href="contact.html"> Contact </a>
+                <a href="https://rarible.com/designlodge" target=”_blank03” rel="noopener noreferrer">Rarible</a>
+                <a href="about.html"> About </a>
+                <a href="index.html"> Home </a>
+           
+        </div>
+
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <script>
+		function myFunction() {
+			var x = document.getElementById("myLinks");
+			if (x.style.display === "block") {
+				x.style.display = "none";
+			} else {
+				x.style.display = "block";
+			}
+		}
+    </script>
+
+
+
+
     <div class="background">
 
         <nav>
@@ -33,7 +69,7 @@
             Illustrator. <br> <br>
             Since my graduation in 2020, I have been working at <a href="https://g19ar.com/" target=”_blank” rel="noopener noreferrer">G19</a>, a commercial architecture firm in Argentina for one year.
             Then, I worked as a consulting architect for the Neom Mountain Ski Village project at  <a href="https://www.aedas.com/" target=”_blank02” rel="noopener noreferrer">AEDAS</a>
-            as a temporary contract. Also, as a freelancer, I have developed artwork and animations, many of which I sold on the crypto-art platform <a href="https://rarible.com/designlodge" target=”_blank03” rel="noopener noreferrer">Rarible</a> 
+            as a temporary contract. Also, as a freelancer, I have developed artwork and animations, many of which I sold on the crypto-art platform <a href="https://rarible.com/designlodge" target=”_blank03” rel="noopener noreferrer">Rarible</a>
             I am also currently studying Javascript, which will be a perfect complement.
 
             <br> <br>
@@ -44,7 +80,7 @@
 
         </h1>
 
-        
+
 
     </div>
 </body>

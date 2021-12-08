@@ -8,18 +8,66 @@
 
 }
 
+
+/* Style the navigation menu */
+.topnav {
+    overflow: hidden;
+    background-color: #000;
+    position: relative;
+    display:block;
+    
+    
+}
+
+    /* Hide the links inside the navigation menu (except for logo/home) */
+    .topnav #myLinks {
+        text-align:center;
+        display:none;
+        
+    }
+
+    /* Style navigation menu links */
+    .topnav a {
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+        background:black;
+
+    
+
+    }
+
+        /* Style the hamburger menu */
+        .topnav a.icon {
+            background: black;
+            display: block;
+            position: absolute;
+            right: 0;
+            top: 0;
+            cursor: pointer;
+        }
+
+        /* Add a grey background color on mouse-over */
+        .topnav a:hover {
+            background-color: #fff;
+            color: black;
+        }
+
+/* Style the active link (or home/logo) */
+.active {
+    background-color: #000;
+    color: white;
+}
 .background {
     height: 100vh;
     width: 100%;
     background: #000000;
     overflow:auto;
+   
 }
 
-.video-background{
-
-    width:100%;
-
-}
 
 
 nav {
@@ -29,54 +77,27 @@ nav {
 
 }
 
-.logo {
-        height: 60px;
-        float: left;
-        cursor: pointer;
-        text-align: left;
-        float:left;
-        margin-top: 20px;
-        margin-left:20px;
+.logo2 {
+   
+        margin-top: 45px;
+        
     }
 
 
-.nav ul {
-    height: 20px;
-    width: 100%;
-    font-family: arial;
-    position: center;
-    float: right;
-}
 
-ul li {
-    display: none;
-    margin: 10px 25px;
-    padding: 20px 20px;
-    float: right;
-    list-style: none;
-    font-size: 20px;
-    box-sizing: border-box;
-    letter-spacing: 1px;
-    z-index: 20;
-}
-
-    ul li a {
-        color: #fff;
-        text-decoration: none;
-        z-index: 20;
-    }
 
 nav ul li a:hover {
     color: #0cfff0;
 }
 
-
-
-
-.video{
-       
+nav.menu-btn i{
+    color:#fff;
+    font-size:22px;
+    cursor: pointer;
 
 }
+
+
 
 
 .textinterior {
@@ -92,7 +113,7 @@ nav ul li a:hover {
     margin-bottom: 20px;
     color: #ffffff;
     line-height: 60px;
-    margin-top:30px;
+    margin-top:10px;
 }
 
     .text-box p {
@@ -128,8 +149,16 @@ nav ul li a:hover {
 
  }
 
+.video {
+    margin-top:0px;
+}
 
- @media only screen and (min-width: 1000px) {
+.video-background {
+    width: 100%;
+}
+
+
+ @media screen and (min-width: 1000px) {
 
 
     * {
@@ -151,6 +180,7 @@ nav ul li a:hover {
         float: right;
         top: 0;
         margin-right:160px;
+
     }
 
 
@@ -188,13 +218,13 @@ nav ul li a:hover {
         font-size: 20px;
         box-sizing: border-box;
         letter-spacing: 1px;
-        z-index: 20;
+       
     }
 
         ul li a {
             color: #fff;
             text-decoration: none;
-            z-index: 20;
+           
         }
 
     nav ul li a:hover {
@@ -202,11 +232,10 @@ nav ul li a:hover {
     }
 
 
-
-
     .video {
     width: 100%;
     margin-right:160px;
+    margin-top:30px;
     }
 
 
@@ -248,10 +277,31 @@ nav ul li a:hover {
         line-height: 30px;
     }
 
-        .text-box a:hover {
+    .text-box a:hover {
             color: #000000;
             background: #ffffff;
             font-weight: 500;
-        }
+    }
 
- }
+
+
+
+
+    .background {
+    height: 100vh;
+    width: 100%;
+    background: #000000;
+    overflow: auto;
+    }
+
+/* Style the navigation menu */
+    .topnav {
+    overflow: hidden;
+    background-color: #000;
+    position: relative;
+    display: none;
+    }
+
+
+
+  }
